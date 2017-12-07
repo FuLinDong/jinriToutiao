@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="//s3a.pstatp.com/toutiao/resource/ntoutiao_web/static/image/favicon_8e9c9c7.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/pc.css">
+    <link rel="stylesheet" href="/src/css/mobile.css">
+    <title>今日头条</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+</head>
+<body>
+    <div id="mainContainer">
+    </div>
+   <script src="/vendor.js" type="text/javascript" charset="utf-8"></script>
+   <script src="/app.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript">
+   	window.onscroll = function(){
+         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+         var menuLeft = document.getElementById("menuLeft");
+         var rect = document.querySelector('#menuLeft').getBoundingClientRect()
+		  if (scrollTop >= 40){
+		  	 menuLeft.style.top = '1%' ;
+		  } else {
+		  	menuLeft.style.top = "10%";
+		  }
+		  console.log(scrollTop);
+		  return scrollTop;
+		    
+		}
+   </script>
+</body>
+<html>

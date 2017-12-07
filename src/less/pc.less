@@ -1,0 +1,427 @@
+@charset "utf-8";
+@import 'z';
+.restBaidu();
+address{
+    text-align: center;
+}
+#clearAfter1:after,
+#clearAfter2:after {
+    display: inline;
+}
+#header{
+    font-size: 1.5em;
+}
+.login-form-button{
+    display: block;
+    width: 100%;
+}
+.logoutButton{
+    display: block;
+    width:100%;
+}
+/*+--------------------------------------------------------------------------登录与注册-start-------------------------------------------------------------------------------------------+*/
+.baseLogin {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    .sns-login {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        li{
+           .fl();
+        }
+        .sns:first-child {
+            margin-left: 25%;
+        }
+        .sns {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-left: 24px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+        }
+        .mail-login {
+           
+            background-image: url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/icon_mail_pc_e58e4d1.png);
+            background-image: url(//s3b.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/svg/icon_mail_pc_d9c3ec7.svg),none;
+            background-position:top center;
+        }
+        .weibo-login {
+            background-image: url(//s3a.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/icon_weibo_pc_bde1e60.png);
+            background-image: url(//s3a.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/svg/icon_weibo_pc_e5a8191.svg),none;
+            background-position:top center;
+        }
+        .qq-login {
+            background-image: url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/icon_qq_pc_de846d6.png);
+            background-image: url(//s3a.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/svg/icon_qq_pc_5baa07b.svg),none;
+            background-position:top center;
+        }
+        .weixin-login {
+            background-image: url(//s3.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/icon_weixin_pc_1d58bef.png);
+            background-image: url(//s3b.pstatp.com/toutiao/resource/ntoutiao_web/static/image/login/svg/icon_weixin_pc_6251f7a.svg);
+            background-position:top center;
+        }
+        span {
+            position: absolute;
+            left: 8px;
+            bottom: -20px;
+            font-size: 12px;
+            width: 24px;
+            line-height: 1;
+            color: #505050;
+        }
+    }
+}
+/*+--------------------------------------------------------------------------登录与注册-end-------------------------------------------------------------------------------------------+*/
+/*+--------------------------------------------------------------------------left-start-------------------------------------------------------------------------------------------+*/
+.ant-menu-item.tuijian{
+    margin-top: 10px;
+    background-color: #ed4040;
+    color: #fff;
+}
+/*左边的目录start*/
+.pc_newsContainer{
+    margin-top:10px;
+    .pc_left{
+        position:fixed;
+        left: 9%; 
+        top:11%;
+        z-index: 9990;
+        display: block;
+        width: 110px;
+        height: 600px;
+        margin-right: 30px;
+        background-color: #fff;
+        img{
+            width:110px;
+        }
+        ul{
+            width:110px;
+            border-width: 0;
+            li{
+               text-align: center;  
+            }
+        }
+        span{
+            font-size: 1.3em;
+        }
+        li{
+            width: 110px;
+            text-align: center;
+            margin-bottom:2px;
+            font-size: 1.5em;
+            border-radius: 6px;
+        }
+        li:hover{
+            background-color: #ed4040;
+            color: #fff;
+            border-width: 0;
+            font-size: 1.5em;
+        }
+    }
+    #moreMenu li{
+        font-size: 1.3em;
+        text-align: center;
+        &:after{
+            width: 0;
+            height: 0;  
+        }
+    }
+}
+/*左边的目录end*/
+/*+--------------------------------------------------------------------------left-end-------------------------------------------------------------------------------------------+*/
+
+
+
+
+/*+--------------------------------------------------------------------------center-start---------------------------------------------------------------------------------------+*/
+/*中间的轮播图start*/
+.carousel{
+    position: relative;
+    width: 660px;
+//  height: 300px;
+    overflow: hidden;
+//  background-image: linear-gradient(to bottom right,rgba(0,0,0,.3),#000);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*中间的轮播图end*/
+/*+--------------------------------------------------------------------------center-end---------------------------------------------------------------------------------------+*/
+
+/*+--------------------------------------------------------------------------right-start---------------------------------------------------------------------------------------+*/
+/*右边的搜索框与按钮start*/
+.tt-autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .tt-input-group>.tt-input__inner {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    .tt-input__inner {  
+        float: left;
+        appearance: none;
+        background-color: #f5f6f7;
+        border-radius: 4px;
+        border: 1px solid #e8e8e8;
+        color: #1f2d3d;
+        display: inline-block;
+        height: 44px;
+        outline: 0;
+        padding: 3px 10px;
+        transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+        width: 80%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .tt-button {
+        display: inline-block;
+        width: 20%;
+        height: 44px;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #208EDA;
+        border: 1px solid #bfcbd9;
+        color: #FFFFFF;
+        text-align: center;
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+/*右边的搜索框与按钮end*/
+
+/*网上有害信息举报start*/
+.report {
+    display: block;
+    padding: 12px 22px;
+    background-color: #f4f5f6;
+    margin: 16px 0;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .img-holder {
+        width: 57px;
+        height: 50px;
+    }
+    .bui-left {
+        float: left;
+    }
+    .info {
+        margin-top: 4px;
+        margin-left: 15px;
+        line-height: 1;
+        .title {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+    }
+    .tel {
+        font-size: 14px;
+        color: #777;
+    }
+    &:after {
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+/*网上有害信息举报end*/
+
+/*右边的新闻与图片的处理start*/
+.ant-card.NewsList.ant-card-bordered{
+// background-color: #f4f5f6; 
+   div{
+       background-color: #f4f5f6; 
+   }
+   .ant-card-head-title{
+       font-size: 1.7em;
+       font-weight: 700;
+   }
+   .ant-card-body{
+       padding-top: 5px;
+   }
+   .divier{
+        display: block;
+        margin-bottom: 10px;
+        height: 1px;
+        background-color: #C0C0C0;
+        width: 100%;
+    }
+
+}
+.imageblock{
+    margin-bottom: 10px;
+    .custom-image{
+       float: left;
+       width:60px;
+       height: 60px;
+       overflow: hidden;
+       img{
+            &:hover{
+                transform: scale3d(1.1,1.1,1.2);
+            }
+            transition: transform 1s;
+        }
+    }
+    .custom-card{
+        float: left;
+        width: 75%;
+        margin-left: 15px;
+        margin-top:5px;
+        display: inline-block;
+        h3{
+           font-size: 1.2em; 
+        }
+    }
+    .clearfix();
+}
+/*右边的新闻与图片的处理end*/
+
+/*右边友情的链接start*/
+
+.productlinks {
+    width: 100%;
+    height: 380px;
+    margin-top: 6px;
+    background: #F7F7F7;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.productlinks-item {
+    text-align: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 13px 0 13px 10px;
+    line-height: 25px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.productlinks-i {
+    text-indent: -10em;
+}
+
+.productlinks-item strong {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+.productlinks-item a {
+    padding: 0 4px 0 0;
+    white-space: nowrap;
+}
+
+.productlinks-item .last, .productlinks-item .pr0 {
+    padding: 0;
+}
+
+.productlinks-item .pr2 {
+    padding-right: 2px;
+}
+
+.changeview .productlinks-item {
+    padding: 4px 0 3px 50px;
+}
+
+.changeview .productlinks {
+    height: 300px;
+    margin-top: 56px;
+}
+
+.item-mail, .item-sns {
+    background: #fff;
+}
+
+.productlinks-i-mail, .productlinks-i-game, .productlinks-i-sns, .productlinks-i-recommend {
+    width: 40px;
+    height: 40px;
+    text-indent: -10em;
+    position: absolute;
+    z-index: 3;
+}
+
+.productlinks-i-mail {
+    background-position: 12px -167px;
+}
+
+.productlinks-i-game {
+    background-position: 7px -217px;
+}
+
+.productlinks-i-sns {
+    background-position: 12px -262px;
+}
+
+.productlinks-i-recommend {
+    background-position: 12px -308px;
+}
+
+.ntes-nav-select-unfold .productlinks-mail-fold {
+    display: block;
+}
+
+.productlinks-mail-fold {
+    position: absolute;
+    z-index: 100;
+//  width: 118px;
+    height: 154px;
+    top: -163px;
+    left: -36px;
+    display: none;
+    background: url(http://img2.cache.netease.com/www/v2013/img/bg_fmail_v3.png) left top no-repeat;
+}
+
+.productlinks-mail-warp {
+    position: relative;
+    z-index: 100;
+    background: none;
+}
+
+.productlinks-fold-163, .productlinks-fold-126, .productlinks-fold-yeah, .productlinks-fold-mob {
+    float: left;
+    display: inline;
+//  width: 116px;
+    height: 34px;
+    text-indent: -100em;
+    overflow: hidden;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.productlinks-fold-163 {
+    margin-top: 1px;
+}
+
+/*右边友情的链接end*/
+/*+--------------------------------------------------------------------------right-end---------------------------------------------------------------------------------------+*/
